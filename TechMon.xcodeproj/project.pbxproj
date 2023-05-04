@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCE41F4C2A03D22600C21AD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41F4B2A03D22600C21AD3 /* AppDelegate.swift */; };
+		FCE41F4E2A03D22600C21AD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41F4D2A03D22600C21AD3 /* SceneDelegate.swift */; };
+		FCE41F532A03D22600C21AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F512A03D22600C21AD3 /* Main.storyboard */; };
+		FCE41F552A03D22700C21AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F542A03D22700C21AD3 /* Assets.xcassets */; };
+		FCE41F582A03D22700C21AD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F562A03D22700C21AD3 /* LaunchScreen.storyboard */; };
+		FCE41F772A03D26100C21AD3 /* lobby.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F612A03D26100C21AD3 /* lobby.png */; };
+		FCE41F782A03D26100C21AD3 /* battlebg.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F622A03D26100C21AD3 /* battlebg.png */; };
+		FCE41F792A03D26100C21AD3 /* bgimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F632A03D26100C21AD3 /* bgimage.jpg */; };
+		FCE41F7A2A03D26100C21AD3 /* waku.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F642A03D26100C21AD3 /* waku.png */; };
+		FCE41F7B2A03D26100C21AD3 /* gold_button.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F652A03D26100C21AD3 /* gold_button.png */; };
+		FCE41F7C2A03D26100C21AD3 /* yusya.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F662A03D26100C21AD3 /* yusya.png */; };
+		FCE41F7D2A03D26100C21AD3 /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F672A03D26100C21AD3 /* monster.png */; };
+		FCE41F7E2A03D26100C21AD3 /* TechMonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41F692A03D26100C21AD3 /* TechMonManager.swift */; };
+		FCE41F7F2A03D26100C21AD3 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41F6A2A03D26100C21AD3 /* Character.swift */; };
+		FCE41F802A03D26100C21AD3 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41F6B2A03D26100C21AD3 /* Enemy.swift */; };
+		FCE41F812A03D26100C21AD3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41F6C2A03D26100C21AD3 /* Player.swift */; };
+		FCE41F822A03D26100C21AD3 /* SE_fanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F6E2A03D26100C21AD3 /* SE_fanfare.mp3 */; };
+		FCE41F832A03D26100C21AD3 /* BGM_battle001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F6F2A03D26100C21AD3 /* BGM_battle001.mp3 */; };
+		FCE41F842A03D26100C21AD3 /* SE_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F702A03D26100C21AD3 /* SE_fire.mp3 */; };
+		FCE41F852A03D26100C21AD3 /* SE_attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F712A03D26100C21AD3 /* SE_attack.mp3 */; };
+		FCE41F862A03D26100C21AD3 /* SE_gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F722A03D26100C21AD3 /* SE_gameover.mp3 */; };
+		FCE41F872A03D26100C21AD3 /* SE_charge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F732A03D26100C21AD3 /* SE_charge.mp3 */; };
+		FCE41F882A03D26100C21AD3 /* lobby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F742A03D26100C21AD3 /* lobby.mp3 */; };
+		FCE41F892A03D26100C21AD3 /* MisakiGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F762A03D26100C21AD3 /* MisakiGothic.ttf */; };
+		FCE41F8C2A03D91700C21AD3 /* misaki_gothic_2nd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F8A2A03D91700C21AD3 /* misaki_gothic_2nd.ttf */; };
+		FCE41F8D2A03D91700C21AD3 /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCE41F8B2A03D91700C21AD3 /* misaki_gothic.ttf */; };
+		FCE41F8F2A03DAAC00C21AD3 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41F8E2A03DAAC00C21AD3 /* LobbyViewController.swift */; };
+		FCE41F912A03DABB00C21AD3 /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE41F902A03DABB00C21AD3 /* BattleViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FCE41F482A03D22600C21AD3 /* TechMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCE41F4B2A03D22600C21AD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCE41F4D2A03D22600C21AD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FCE41F522A03D22600C21AD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCE41F542A03D22700C21AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCE41F572A03D22700C21AD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCE41F592A03D22700C21AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE41F612A03D26100C21AD3 /* lobby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobby.png; sourceTree = "<group>"; };
+		FCE41F622A03D26100C21AD3 /* battlebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battlebg.png; sourceTree = "<group>"; };
+		FCE41F632A03D26100C21AD3 /* bgimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgimage.jpg; sourceTree = "<group>"; };
+		FCE41F642A03D26100C21AD3 /* waku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waku.png; sourceTree = "<group>"; };
+		FCE41F652A03D26100C21AD3 /* gold_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold_button.png; sourceTree = "<group>"; };
+		FCE41F662A03D26100C21AD3 /* yusya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yusya.png; sourceTree = "<group>"; };
+		FCE41F672A03D26100C21AD3 /* monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster.png; sourceTree = "<group>"; };
+		FCE41F692A03D26100C21AD3 /* TechMonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechMonManager.swift; sourceTree = "<group>"; };
+		FCE41F6A2A03D26100C21AD3 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		FCE41F6B2A03D26100C21AD3 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		FCE41F6C2A03D26100C21AD3 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FCE41F6E2A03D26100C21AD3 /* SE_fanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_fanfare.mp3; sourceTree = "<group>"; };
+		FCE41F6F2A03D26100C21AD3 /* BGM_battle001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM_battle001.mp3; sourceTree = "<group>"; };
+		FCE41F702A03D26100C21AD3 /* SE_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_fire.mp3; sourceTree = "<group>"; };
+		FCE41F712A03D26100C21AD3 /* SE_attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_attack.mp3; sourceTree = "<group>"; };
+		FCE41F722A03D26100C21AD3 /* SE_gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_gameover.mp3; sourceTree = "<group>"; };
+		FCE41F732A03D26100C21AD3 /* SE_charge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_charge.mp3; sourceTree = "<group>"; };
+		FCE41F742A03D26100C21AD3 /* lobby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lobby.mp3; sourceTree = "<group>"; };
+		FCE41F762A03D26100C21AD3 /* MisakiGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MisakiGothic.ttf; sourceTree = "<group>"; };
+		FCE41F8A2A03D91700C21AD3 /* misaki_gothic_2nd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic_2nd.ttf; sourceTree = "<group>"; };
+		FCE41F8B2A03D91700C21AD3 /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
+		FCE41F8E2A03DAAC00C21AD3 /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		FCE41F902A03DABB00C21AD3 /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCE41F452A03D22600C21AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCE41F3F2A03D22600C21AD3 = {
+			isa = PBXGroup;
+			children = (
+				FCE41F4A2A03D22600C21AD3 /* TechMon */,
+				FCE41F492A03D22600C21AD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCE41F492A03D22600C21AD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCE41F482A03D22600C21AD3 /* TechMon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCE41F4A2A03D22600C21AD3 /* TechMon */ = {
+			isa = PBXGroup;
+			children = (
+				FCE41F4B2A03D22600C21AD3 /* AppDelegate.swift */,
+				FCE41F4D2A03D22600C21AD3 /* SceneDelegate.swift */,
+				FCE41F512A03D22600C21AD3 /* Main.storyboard */,
+				FCE41F542A03D22700C21AD3 /* Assets.xcassets */,
+				FCE41F562A03D22700C21AD3 /* LaunchScreen.storyboard */,
+				FCE41F592A03D22700C21AD3 /* Info.plist */,
+				FCE41F8A2A03D91700C21AD3 /* misaki_gothic_2nd.ttf */,
+				FCE41F8B2A03D91700C21AD3 /* misaki_gothic.ttf */,
+				FCE41F5F2A03D26100C21AD3 /* TechMon_Resources */,
+				FCE41F8E2A03DAAC00C21AD3 /* LobbyViewController.swift */,
+				FCE41F902A03DABB00C21AD3 /* BattleViewController.swift */,
+			);
+			path = TechMon;
+			sourceTree = "<group>";
+		};
+		FCE41F5F2A03D26100C21AD3 /* TechMon_Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCE41F602A03D26100C21AD3 /* Images */,
+				FCE41F682A03D26100C21AD3 /* Models */,
+				FCE41F6D2A03D26100C21AD3 /* Sounds */,
+				FCE41F752A03D26100C21AD3 /* Fonts */,
+			);
+			path = TechMon_Resources;
+			sourceTree = "<group>";
+		};
+		FCE41F602A03D26100C21AD3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FCE41F612A03D26100C21AD3 /* lobby.png */,
+				FCE41F622A03D26100C21AD3 /* battlebg.png */,
+				FCE41F632A03D26100C21AD3 /* bgimage.jpg */,
+				FCE41F642A03D26100C21AD3 /* waku.png */,
+				FCE41F652A03D26100C21AD3 /* gold_button.png */,
+				FCE41F662A03D26100C21AD3 /* yusya.png */,
+				FCE41F672A03D26100C21AD3 /* monster.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FCE41F682A03D26100C21AD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCE41F692A03D26100C21AD3 /* TechMonManager.swift */,
+				FCE41F6A2A03D26100C21AD3 /* Character.swift */,
+				FCE41F6B2A03D26100C21AD3 /* Enemy.swift */,
+				FCE41F6C2A03D26100C21AD3 /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCE41F6D2A03D26100C21AD3 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FCE41F6E2A03D26100C21AD3 /* SE_fanfare.mp3 */,
+				FCE41F6F2A03D26100C21AD3 /* BGM_battle001.mp3 */,
+				FCE41F702A03D26100C21AD3 /* SE_fire.mp3 */,
+				FCE41F712A03D26100C21AD3 /* SE_attack.mp3 */,
+				FCE41F722A03D26100C21AD3 /* SE_gameover.mp3 */,
+				FCE41F732A03D26100C21AD3 /* SE_charge.mp3 */,
+				FCE41F742A03D26100C21AD3 /* lobby.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FCE41F752A03D26100C21AD3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FCE41F762A03D26100C21AD3 /* MisakiGothic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCE41F472A03D22600C21AD3 /* TechMon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCE41F5C2A03D22700C21AD3 /* Build configuration list for PBXNativeTarget "TechMon" */;
+			buildPhases = (
+				FCE41F442A03D22600C21AD3 /* Sources */,
+				FCE41F452A03D22600C21AD3 /* Frameworks */,
+				FCE41F462A03D22600C21AD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TechMon;
+			productName = TechMon;
+			productReference = FCE41F482A03D22600C21AD3 /* TechMon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCE41F402A03D22600C21AD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FCE41F472A03D22600C21AD3 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = FCE41F432A03D22600C21AD3 /* Build configuration list for PBXProject "TechMon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCE41F3F2A03D22600C21AD3;
+			productRefGroup = FCE41F492A03D22600C21AD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCE41F472A03D22600C21AD3 /* TechMon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCE41F462A03D22600C21AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE41F7C2A03D26100C21AD3 /* yusya.png in Resources */,
+				FCE41F792A03D26100C21AD3 /* bgimage.jpg in Resources */,
+				FCE41F892A03D26100C21AD3 /* MisakiGothic.ttf in Resources */,
+				FCE41F7A2A03D26100C21AD3 /* waku.png in Resources */,
+				FCE41F822A03D26100C21AD3 /* SE_fanfare.mp3 in Resources */,
+				FCE41F772A03D26100C21AD3 /* lobby.png in Resources */,
+				FCE41F7B2A03D26100C21AD3 /* gold_button.png in Resources */,
+				FCE41F852A03D26100C21AD3 /* SE_attack.mp3 in Resources */,
+				FCE41F8D2A03D91700C21AD3 /* misaki_gothic.ttf in Resources */,
+				FCE41F582A03D22700C21AD3 /* LaunchScreen.storyboard in Resources */,
+				FCE41F882A03D26100C21AD3 /* lobby.mp3 in Resources */,
+				FCE41F552A03D22700C21AD3 /* Assets.xcassets in Resources */,
+				FCE41F862A03D26100C21AD3 /* SE_gameover.mp3 in Resources */,
+				FCE41F782A03D26100C21AD3 /* battlebg.png in Resources */,
+				FCE41F8C2A03D91700C21AD3 /* misaki_gothic_2nd.ttf in Resources */,
+				FCE41F832A03D26100C21AD3 /* BGM_battle001.mp3 in Resources */,
+				FCE41F872A03D26100C21AD3 /* SE_charge.mp3 in Resources */,
+				FCE41F842A03D26100C21AD3 /* SE_fire.mp3 in Resources */,
+				FCE41F7D2A03D26100C21AD3 /* monster.png in Resources */,
+				FCE41F532A03D22600C21AD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCE41F442A03D22600C21AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE41F7E2A03D26100C21AD3 /* TechMonManager.swift in Sources */,
+				FCE41F802A03D26100C21AD3 /* Enemy.swift in Sources */,
+				FCE41F8F2A03DAAC00C21AD3 /* LobbyViewController.swift in Sources */,
+				FCE41F7F2A03D26100C21AD3 /* Character.swift in Sources */,
+				FCE41F812A03D26100C21AD3 /* Player.swift in Sources */,
+				FCE41F912A03DABB00C21AD3 /* BattleViewController.swift in Sources */,
+				FCE41F4C2A03D22600C21AD3 /* AppDelegate.swift in Sources */,
+				FCE41F4E2A03D22600C21AD3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FCE41F512A03D22600C21AD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE41F522A03D22600C21AD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCE41F562A03D22700C21AD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCE41F572A03D22700C21AD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCE41F5A2A03D22700C21AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCE41F5B2A03D22700C21AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCE41F5D2A03D22700C21AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TechMon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chiyomaru.chiyoma.TechMon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCE41F5E2A03D22700C21AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TechMon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chiyomaru.chiyoma.TechMon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCE41F432A03D22600C21AD3 /* Build configuration list for PBXProject "TechMon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE41F5A2A03D22700C21AD3 /* Debug */,
+				FCE41F5B2A03D22700C21AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCE41F5C2A03D22700C21AD3 /* Build configuration list for PBXNativeTarget "TechMon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE41F5D2A03D22700C21AD3 /* Debug */,
+				FCE41F5E2A03D22700C21AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCE41F402A03D22600C21AD3 /* Project object */;
+}
