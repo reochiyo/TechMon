@@ -23,9 +23,7 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>TechMon_Resources/Fonts/MisakiGothic.ttf</string>
-		<string>misaki_gothic_2nd.ttf</string>
-		<string>misaki_gothic.ttf</string>
+		<string>MisakiGothic.ttf</string>
 	</array>
 </dict>
 </plist>
